@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WEBMAG</title>
+
+<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #3d455c;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    color: #212631;
+    margin: 0px 0px 15px;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+a {
+    color: #212631;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #212631;
+    text-decoration: underline;
+    outline: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    top: 0;
+    border-bottom: 1px solid #ECEDF1;
+}
+
+.logo{
+    float : left;
+    display: inline-block;
+    line-height: 70px;
+    margin-right: 40px;
+}
+
+.navbar .menu{
+    padding: 0;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 20px 0px;
+    border-right: 1px solid #ECEDF1;
+
+}
+
+.menu{
+    margin-left: 20px;
+}
+
+.menu li a {
+    position: relative;
+    padding: 23px 20px;
+    margin-left: -5px;
+}
+
+.menu li.satu a{
+    border-bottom: 3px solid #4BB92F;
+}
+
+.menu li.dua a{
+    border-bottom: 3px solid #ff8700;
+}
+
+.menu li.tiga a {
+     border-bottom: 3px solid #0078ff;
+}
+
+.menu li.empat a {
+     border-bottom: 3px solid #8d00ff;
+}
+
+.menu li a:hover {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.menu li.satu a:hover {
+    color: #4BB92F;
+}
+
+.menu li.dua a:hover{
+    color: #ff8700;
+}
+
+.menu li.tiga a:hover {
+    color: #0078ff;
+}
+
+.menu li.empat a:hover {
+    color: #8d00ff;
+}
+
+.btns {
+    float:right;
+    margin-top: -20px; 
+}
+
+.btns button {
+    padding: 25px 25px;
+    border: none;
+    line-height: 20px;
+    background: transparent;
+}
+
+.section{
+    padding-top: 40px;
+}
+
+.col-lg-6{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0;
+}
+
+.col-lg-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-lg-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-lg-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-lg-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-lg-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-lg-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.post{
+    margin-bottom: 40px;
+}
+
+.post.post-thumb .post-body {
+    position: absolute;
+    bottom: 20px;
+    padding: 20px 15px;
+}
+
+.post .post-img img{
+    width: 100%;
+}
+
+.post .post-img:hover{
+    opacity: 0.9;
+}
+
+.post .desc {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.post .title a{
+    color: white;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+.desc .kotak{
+    font-size: 13px;
+    padding: 3px 10px;
+    font-weight: 600;
+    border-radius: 2px;
+    color: white;
+    margin-right: 20px;
+}
+
+.desc .date{
+    font-size: 13px;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.desc .post-date{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.desc .kotak.catsatu {
+     background-color: #4BB92F;
+}
+.desc .kotak.catdua {
+     background-color: #ff8700;
+}
+.desc .kotak.cattiga {
+     background-color: #8d00ff;
+}
+.desc .kotak.catempat {
+     background-color: #0078ff;
+}
+
+.post-body .post-title {
+     font-size: 18px;
+     margin-bottom: 0px;
+}
+
+.judul{
+    margin-bottom: 40px;
+}
+
+.post.widget{
+    margin-bottom: 80px;
+}
+
+.post.widget .post-img{
+    width: 90px;
+    float: left;
+    margin-right: 15px;
+}
+
+.post.widget .post-img img {
+    width: 100%;
+}
+
+.post.widget .post-title {
+    font-size: 18px;
+}
+
+.iklan{
+    margin-left: 30px;
+}
+
+.section.section-grey {
+    background-color: #fbfbfd;
+    border-bottom: 1px solid #eceef2;
+    border-top: 1px solid #eceef2;
+    margin: auto;
+}
+
+.post.post2 .post-img{
+    width: 40%;
+    float: left;
+}
+
+.post.post2 .post-body{
+    margin-left: 320px;
+}
+
+.post.post2 .desc{
+    margin-top: 0px;
+}
+
+.post.post2 .post-title{
+    margin-bottom: 15px;
+}
+
+.category li{
+    padding-bottom: 10px;
+    display: block;
+    border-bottom: 1px solid #eceef2;
+    margin-top: 10px;
+}
+
+.category ul li a:hover{
+    text-decoration: none;
+}
+
+.category ul li.satuu a:hover {
+    color: #4BB92F;
+}
+
+.category ul li.duaa a:hover{
+    color: #ff8700;
+}
+
+.category ul li.tigaa a:hover {
+    color: #0078ff;
+}
+
+.category ul li.empatt a:hover {
+    color: #8d00ff;
+}
+
+.category ul li span{
+    float: right;
+    padding: 0px 5px;
+    color:white;
+}
+
+.category ul li.satuu span {
+     background-color: #4BB92F;
+}
+
+.category ul li.duaa span {
+     background-color: #ff8700;
+}
+
+.category ul li.tigaa span {
+     background-color: #8d00ff;
+}
+
+.category ul li.empatt span {
+     background-color: #0078ff;
+}
+
+.tags{
+    margin-top: 40px;
+}
+
+.tags ul li{
+    display:inline-block;
+    margin-right:3px;
+    margin-bottom:5px;
+}
+
+.tags ul li a{
+    display: block;
+    color: white;
+    background-color: #212631;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+
+.tags ul li a:hover{
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+.section-row{
+    margin-bottom: 40px;
+}
+
+.section-row button{
+    color: white;
+    background-color: black;
+    padding: 5px 35px;
+    font-size: 15px;
+}
+
+.footer{
+    padding-bottom: 40px;
+    margin-top: 40px;
+}
+
+.footer .container{
+    padding-top: 80px;
+    border-top: 1px solid #F4f4f9;
+}
+
+.footer-widget{
+    margin-bottom: 20px;
+}
+
+.footer-widget a{
+    color: #a7b3c6;
+}
+
+.footer-widget a:hover {
+    text-decoration: none;
+    color: #212631;
+}
+
+.logobawah{
+    padding-bottom: 40px;
+}
+
+.footernav li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer-title{
+    padding-bottom: 20px;
+}
+
+.contact li{
+    margin-bottom: 5px;
+}
+
+.catagories li{
+    margin-bottom: 5px;
+}
+
+.footer-social{
+    margin top: -20px;
+}
+
+.footer-social li{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.footer-social li a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    border-radius: 2px;
+    background-color: #a7b3c6;
+}
+
+.footer-social li a:hover{
+    opacity: 0.9;
+}
+
+.join form{
+    position: relative;
+}
+
+.join form input{
+    padding-right: 55px;
+    position: relative;
+    height: 40px;
+    border: 2px solid #eceef2;
+    width: 100%;
+    padding: 0px 15px;
+}
+
+.join form .join-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    text-align: center;
+    color: #a7b3c6;
+    background: transparent;
+    border: none;
+}
+
+.join form .join-btn:hover{
+    opacity: 0.9;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <div class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="./img/logo.png" alt=""></a>
+            </div>
+            <ul class="menu">
+                <li><a href="category.html" style="border-left: 1px solid #ECEDF1;">News</a></li>
+                <li><a href="category.html">Popular</a></li>
+                <li class="satu"><a href="category.html">Web Design</a></li>
+                <li class="dua"><a href="category.html">JavaScript</a></li>
+                <li class="tiga"><a href="category.html">Css</a></li>
+                <li class="empat"><a href="category.html">Jquery</a></li>
+                <li class="btns" style="border: none;"><button > <i class="fas fa-search"></i></button></li>
+                <li class="btns" style="border: none;"><button ><i class="fas fa-bars"></i></button></li>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="col-lg-6" style="float: left">
+            <div class="post post-thumb">
+                <a class="post-img" href="blog-post.html"><img src="./img/post-1.jpg" alt=""></a>
+                    <div class="post-body">
+                        <div class="desc">
+                            <a class="kotak catdua" href="category.html">JAVASCRIPT</a>
+                            <span class="date">March 25, 2018</span>
+                        </div>
+                        <h3 class="title"><a href="blog-post.html">Chrome Extension Protects Against JavaScript-Based CPU Side-Channel Attacks</a></h3>
+                    </div>
+            </div>
+        </div>
+        <div class="col-lg-6" style="float: right">
+            <div class="post post-thumb">
+                <a class="post-img" href="blog-post.html"><img src="./img/post-2.jpg" alt=""></a>
+                <div class="post-body">
+                    <div class="desc">
+                        <a class="kotak cattiga" href="category.html">JQUERY</a>
+                        <span class="date">October 14, 2018</span>
+                    </div>
+                    <h3 class="title"><a href="blog-post.html">Ask HN: Does Anybody Still Use JQuery?</a></h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="judul">
+                    <h2>Recent Posts</h2>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="post">
+                    <a class="post-img" href="blog-post.html"><img src="./img/post-3.jpg" alt=""></a>
+                    <div class="post-body">
+                        <div class="desc">
+                             <a class="kotak catsatu" href="category.html">WEB DESIGN</a>
+                            <span class="post-date">April 4, 2018</span>
+                        </div>
+                        <h3 class="post-title"><a href="blog-post.html">Pagedraw UI Builder Turns Your Website Design Mockup Into Code Automatically</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="post">
+                    <a class="post-img" href="blog-post.html"><img src="./img/post-4.jpg" alt=""></a>
+                    <div class="post-body">
+                        <div class="desc">
+                            <a class="kotak catdua" href="category.html">JAVASCRIPT</a>
+                            <span class="post-date">August 6, 2018</span>
+                        </div>
+                        <h3 class="post-title"><a href="blog-post.html">Chrome Extension Protects Against JavaScript-Based CPU Side-Channel Attacks</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="post">
+                    <a class="post-img" href="blog-post.html"><img src="./img/post-5.jpg" alt=""></a>
+                    <div class="post-body">
+                        <div class="desc">
+                            <a class="kotak cattiga" href="category.html">JQUERY</a>
+                            <span class="post-date">August 1, 2018</span>
+                        </div>
+                        <h3 class="post-title"><a href="blog-post.html">Ask HN: Does Anybody Still Use JQuery?</a></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="post">
+                    <a class="post-img" href="blog-post.html"><img src="./img/post-6.jpg" alt=""></a>
+                    <div class="post-body">
+                        <div class="desc">
+                            <a class="kotak catdua" href="category.html">JAVASCRIPT</a>
+                            <span class="post-date">February 8, 2018</span>
+                        </div>
+                        <h3 class="post-title"><a href="blog-post.html">Why Node.js Is The Coolest Kid On The Backend Development Block!</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="post">
+                    <a class="post-img" href="blog-post.html"><img src="./img/post-1.jpg" alt=""></a>
+                    <div class="post-body">
+                        <div class="desc">
+                            <a class="kotak catempat" href="category.html">CSS</a>
+                            <span class="post-date">August 2, 2018</span>
+                        </div>
+                        <h3 class="post-title"><a href="blog-post.html">CSS Float: A Toturial</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="post">
+                <a class="post-img" href="blog-post.html"><img src="./img/post-2.jpg" alt=""></a>
+                    <div class="post-body">
+                        <div class="desc">
+                            <a class="kotak catdua" href="category.html">JAVASCRIPT</a>
+                            <span class="post-date">December 31, 2018</span>
+                        </div>
+                        <h3 class="post-title"><a href="blog-post.html">Why Node.js Is The Coolest Kid On The Backend Development Block!</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="post post-thumb">
+                            <a class="post-img" href="blog-post.html"><img src="./img/post-2.jpg" alt=""></a>
+                            <div class="post-body">
+                                <div class="desc">
+                                    <a class="kotak cattiga" href="category.html">JQUERY</a>
+                                    <span class="date">January 15, 2018</span>
+                                </div>
+                                <h3 class="title"><a href="blog-post.html">Ask HN: Does Anybody Still Use JQuery?</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="post">
+                        <a class="post-img" href="blog-post.html"><img src="./img/post-1.jpg" alt=""></a>
+                            <div class="post-body">
+                                <div class="desc">
+                                    <a class="kotak catempat" href="category.html">CSS</a>
+                                    <span class="post-date">March 9, 2018</span>
+                                </div>
+                                <h3 class="post-title"><a href="blog-post.html">CSS Float: A Toturial</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="post">
+                        <a class="post-img" href="blog-post.html"><img src="./img/post-2.jpg" alt=""></a>
+                            <div class="post-body">
+                                <div class="desc">
+                                    <a class="kotak catsatu" href="category.html">WEB DESIGN</a>
+                                    <span class="post-date">April 3, 2018</span>
+                                </div>
+                                <h3 class="post-title"><a href="blog-post.html">Tell-A-Tool: Guide To Web Design And Development Tools</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix visible-md visible-lg"></div>
+
+                    <div class="col-lg-6">
+                         <div class="post">
+                            <a class="post-img" href="blog-post.html"><img src="./img/post-4.jpg" alt=""></a>
+                            <div class="post-body">
+                                <div class="desc">
+                                    <a class="kotak catdua" href="category.html">JAVASCRIPT</a>
+                                    <span class="post-date">March 25, 2018</span>
+                                </div>
+                                <h3 class="post-title"><a href="blog-post.html">Chrome Extension Protects Against JavaScript-Based CPU Side-Channel Attacks</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="post">
+                        <a class="post-img" href="blog-post.html"><img src="./img/post-5.jpg" alt=""></a>
+                            <div class="post-body">
+                                <div class="desc">
+                                    <a class="kotak cattiga" href="category.html">JQUERY</a>
+                                    <span class="post-date">October 15, 2018</span>
+                                </div>
+                                <h3 class="post-title"><a href="blog-post.html">Ask HN: Does Anybody Still Use JQuery?</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="post">
+                        <a class="post-img" href="blog-post.html"><img src="./img/post-3.jpg" alt=""></a>
+                            <div class="post-body">
+                                <div class="desc">
+                                    <a class="kotak catsatu" href="category.html">WEBDESIGN</a>
+                                    <span class="post-date">March 20, 2018</span>
+                                </div>
+                                <h3 class="post-title"><a href="blog-post.html">Pagedraw UI Builder Turns Your Website Design Mockup Into Code Automaticallyl</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="post">
+                        <a class="post-img" href="blog-post.html"><img src="./img/post-4.jpg" alt=""></a>
+                            <div class="post-body">
+                                <div class="desc">
+                                    <a class="kotak catdua" href="category.html">JAVASCRIPT</a>
+                                    <span class="post-date">Mei 10, 2018</span>
+                                </div>
+                                <h3 class="post-title"><a href="blog-post.html">Chrome Extension Protects Against JavaScript-Based CPU Side-Channel Attacks</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="samping">
+                    <div class="judul">
+                        <h2>Most Read</h2>
+                    </div>
+                        <div class="post widget" style="margin-bottom: 90px;">
+                        <a class="post-img" href="blog-post.html"><img src="./img/widget-1.jpg" alt=""></a>
+                            <div class="post-body">
+                                <h3 class="post-title"><a href="blog-post.html">Tell-A-Tool: Guide To Web Design And Development Tools</a></h3>
+                            </div>
+                        </div>
+                        <div class="post widget">
+                        <a class="post-img" href="blog-post.html"><img src="./img/widget-2.jpg" alt=""></a>
+                            <div class="post-body">
+                                <h3 class="post-title"><a href="blog-post.html">Pagedraw UI Builder Turns Your Website Design Mockup Into Code Automatically</a></h3>
+                            </div>
+                        </div>
+                        <div class="post widget">
+                        <a class="post-img" href="blog-post.html"><img src="./img/widget-3.jpg" alt=""></a>
+                            <div class="post-body">
+                                <h3 class="post-title"><a href="blog-post.html">Why Node.js Is The Coolest Kid On The Backend Development Block!</a></h3>
+                            </div>
+                        </div>
+                        <div class="post widget">
+                        <a class="post-img" href="blog-post.html"><img src="./img/widget-4.jpg" alt=""></a>
+                            <div class="post-body">
+                                <h3 class="post-title"><a href="blog-post.html">Tell-A-Tool: Guide To Web Design And Development Tools</a></h3>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="samping">
+                    <div class="judul">
+                        <h2>Featured Posts</h2>
+                    </div>
+                    <div class="post post-thumb">
+                        <a class="post-img" href="blog-post.html"><img src="./img/post-2.jpg" alt=""></a>
+                        <div class="post-body"style="margin-bottom: 500px;">
+                            <div class="desc">
+                                <a class="kotak cattiga" href="category.html">JQUERY</a>
+                                <span class="date">Juni 7, 2018</span>
+                            </div>
+                            <h3 class="title"><a href="blog-post.html">Ask HN: Does Anybody Still Use JQuery?</a></h3>
+                        </div>
+                    </div>
+                    <div class="post post-thumb">
+                        <a class="post-img" href="blog-post.html"><img src="./img/post-1.jpg" alt=""></a>
+                        <div class="post-body" style="margin-bottom: 250px;">
+                            <div class="desc">
+                                <a class="kotak catdua" href="category.html">JAVASCRIPT</a>
+                                <span class="date">September 17, 2018</span>
+                            </div>
+                            <h3 class="title"><a href="blog-post.html">Chrome Extension Protects Against JavaScript-Based CPU Side-Channel Attacks</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="iklan">
+                    <a href="#" style="display: inline-block;margin: auto;">
+                    <img src="./img/ad-1.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<div class="section section-grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="judul" style="text-align: center;">
+                    <h2>Featured Posts</h2>
+                </div>
+            </div>
+            <div class="col-lg-4" style="float: left">
+                <div class="post">
+                <a class="post-img" href="blog-post.html"><img src="./img/post-4.jpg" alt=""></a>
+                    <div class="post-body">
+                        <div class="desc">
+                            <a class="kotak catdua" href="category.html">JAVASCRIPT</a>
+                            <span class="post-date">September 17, 2018</span>
+                        </div>
+                        <h3 class="post-title"><a href="blog-post.html">Chrome Extension Protects Against JavaScript-Based CPU Side-Channel Attacks</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4" style="float: left">
+                <div class="post">
+                <a class="post-img" href="blog-post.html"><img src="./img/post-5.jpg" alt=""></a>
+                    <div class="post-body">
+                        <div class="desc">
+                            <a class="kotak cattiga" href="category.html">JQUERY</a>
+                            <span class="post-date">October 13, 2018</span>
+                        </div>
+                        <h3 class="post-title"><a href="blog-post.html">Ask HN: Does Anybody Still Use JQuery?</a></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4" style="float: right">
+                <div class="post">
+                <a class="post-img" href="blog-post.html"><img src="./img/post-3.jpg" alt=""></a>
+                    <div class="post-body">
+                        <div class="desc">
+                            <a class="kotak catsatu" href="category.html">WEB DESIGN</a>
+                            <span class="post-date">November 11, 2018</span>
+                        </div>
+                        <h3 class="post-title"><a href="blog-post.html">Pagedraw UI Builder Turns Your Website Design Mockup Into Code Automatically</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="judul" style="text-align: left;">
+                            <h2>Most Read</h2>
+                        </div>
+                            <div class="col-lg-12">
+                                <div class="post post2">
+                                <a class="post-img" href="blog-post.html"><img src="./img/post-4.jpg" alt=""></a>
+                                    <div class="post-body">
+                                        <div class="desc">
+                                            <a class="kotak catdua" href="category.html">JAVASCRIPT</a>
+                                            <span class="post-date">September 13, 2018</span>
+                                        </div>
+                                        <h3 class="post-title"><a href="blog-post.html">Chrome Extension Protects Against JavaScript-Based CPU Side-Channel Attacks</a></h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="post post2">
+                                <a class="post-img" href="blog-post.html"><img src="./img/post-6.jpg" alt=""></a>
+                                    <div class="post-body">
+                                        <div class="desc">
+                                            <a class="kotak catdua" href="category.html">JAVASCRIPT</a>
+                                            <span class="post-date">July 4, 2018</span>
+                                        </div>
+                                        <h3 class="post-title"><a href="blog-post.html">Why Node.js Is The Coolest Kid On The Backend Development Block!</a></h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12" style="margin-bottom: 70px;">
+                                <div class="post post2">
+                                <a class="post-img" href="blog-post.html"><img src="./img/post-1.jpg" alt=""></a>
+                                    <div class="post-body">
+                                        <div class="desc">
+                                            <a class="kotak catempat" href="category.html">CSS</a>
+                                            <span class="post-date">October 24, 2018</span>
+                                        </div>
+                                        <h3 class="post-title"><a href="blog-post.html">CSS Float: A Tutorial</a></h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="post post2">
+                                <a class="post-img" href="blog-post.html"><img src="./img/post-2.jpg" alt=""></a>
+                                    <div class="post-body">
+                                        <div class="desc">
+                                            <a class="kotak cattiga" href="category.html">JQUERY</a>
+                                            <span class="post-date">August 27, 2018</span>
+                                        </div>
+                                        <h3 class="post-title"><a href="blog-post.html">Ask HN: Does Anybody Still Use JQuery?</a></h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="section-row">
+                                    <button style="margin-left: 250px; margin-top: 40px;">LOAD MORE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="iklan">
+                        <a href="#" style="display: inline-block;margin: auto;">
+                        <img src="./img/ad-1.jpg" alt=""></a>
+                    </div>
+                    <div class="samping">
+                        <div class="judul" style="margin-top: 30px;">
+                            <h2 style="text-align: left">Categories</h2>
+                        </div>
+                        <div class="category">
+                            <ul>
+                                <li class="satuu"><a href="#">Web Design<span>340</span></a></li>
+                                <li class="duaa"><a href="#">Java Script<span>74</span></a></li>
+                                <li class="tigaa"><a href="#">JQuery<span>41</span></a></li>
+                                <li class="empatt"><a href="#">CSS<span>35</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="samping">
+                        <div class="tags">
+                            <ul>
+                                <li><a href="#">Chrome</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">Tutorial</a></li>
+                                <li><a href="#">Backend</a></li>
+                                <li><a href="#">JQuery</a></li>
+                                <li><a href="#">Design</a></li>
+                                <li><a href="#">Development</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                                <li><a href="#">Website</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="footer-widget">
+                    <div class="logobawah">
+                        <a href="index.html"><img src="./img/logo.png" alt=""></a>
+                    </div>
+                    <ul class="footernav">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Advertisement</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="footer-widget">
+                            <div class="footer-title">
+                                <h4>About Us</h4>
+                            </div>
+                            <ul class="contact">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="#">Join Us</a></li>
+                                <li><a href="contact.html">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer-widget">
+                            <div class="footer-title">
+                                <h4>Catagories</h4>
+                            </div>
+                            <ul class="catagories">
+                                <li><a href="category.html">Web Design</a></li>
+                                <li><a href="category.html">Java Script</a></li>
+                                <li><a href="category.html">CSS</a></li>
+                                <li><a href="category.html">JQuery</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="footer-widget">
+                    <div class="footer-title">
+                        <h4>Join Our Newsletter</h4>
+                    </div>
+                    <div class="join">
+                        <form>
+                            <input class="input" type="email" name="newsletter" placeholder="Enter your email">
+                            <button class="join-btn"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <ul class="footer-social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+           </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
