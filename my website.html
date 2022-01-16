@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Tittle</title>
+<style>
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Arial;
+	margin: 0
+}
+
+.header{
+	padding: 80px;
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+.navbar{
+	overflow: hidden;
+	background-color: #333;
+}
+
+.navbar a{
+	text-decoration: none;
+	float: left;
+	padding: 14px 20px;
+	color: white;
+}
+
+.navbar a.right{
+	float : right;
+}
+
+.navbar a:hover{
+	background-color: #333;
+	color: black;
+}
+
+.row{
+	display: flex;
+	display: -ms-flex;
+	flex: wrap;
+	-ms-flex-warp: wrap;
+}
+
+.side{
+	background-color: #f1f1f1;
+	padding: 20px;
+	flex: 30%;
+	ms-flex: 30%;
+}
+
+.main{
+	flex: 70%;
+	ms-flex: 70%;
+	padding: 20px;
+}
+
+.fakeimg{
+	background-color: #aaa;
+	padding: 20px;
+}
+
+.footer{
+	padding: 20px;
+	text-align: center;
+	background-color: blue;
+}
+
+</style>
+</head>
+<body>
+	<div class="header">
+		<h1>My Website</h1>
+		<p>A website created by me</p>
+	</div>
+	<div class="navbar">
+		<a href="#">Link</a>
+		<a href="#">Link</a>
+		<a href="#">Link</a>
+		<a href="#" class="right">Link</a>
+	</div>
+	<dic class="row">
+		<div class="side">
+			<h2>About me</h2>
+			<h5>Photo of me</h5>
+			<div class="fakeimg" style="height: 200px">Image</div>
+			<p>some text about the photo</p>
+			<h3>More Text</h3>
+			<p>more text about the photo</p>
+			<div class="fakeimg" style="height: 60px">Image</div><br>
+			<div class="fakeimg" style="height: 60px">Image</div><br>
+			<div class="fakeimg" style="height: 60px">Image</div>
+		</div>
+		<div class="main">
+			<h2>About me</h2>
+			<h5>Description, 27 august 2019</h5>
+			<div class="fakeimg" style="height: 200px">Image</div>
+			<p>flash</p>
+			<p>more text about flash</p>
+			<h2>More about me</h2>
+			<h5>Description, 29 august 2019</h5>
+			<div class="fakeimg" style="height: 200px">Image</div>
+			<p>Pemograman Dasar</p>
+			<p>more text about Pemograman Dasar</p>
+		</div>
+	</dic>
+	<div class="footer">
+		<h2>Thanks for visiting</h2>
+	</div>
+
+</body>
+</html>
